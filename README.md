@@ -1,27 +1,20 @@
 # Graph-Algorithms
 
-Set of algorithms for Directed and Undirected Graphs.
+Directed and Undirected Graphs Algorithms
 
-El objetivo de este proyecto fue principalmente conocer la Teoría de Grafos y sus aplicaciones. La estructura de datos dinámica en la que se basaron los algoritmos al momento de programar fue un Grafo. Se desarrollaron algoritmos para Grafos Dirígidos y no Dirígidos.
-
-### Algoritmos para Grafos Dirígidos
+### Directed Graph Algorithms
 > - Dijkstra
 > - Floyd
 > - Warshall
-> - Recuperar los componentes del Grafo
-> - Generar su Bosque Abarcador
-> - Isomorfismo entre dos Grafos
+> - Isomorphism
 
-### Algoritmos para Grafos No Dirígidos
-> - Vereficar si un Grafo es Plano
-> - Grafos Coloreados
+### Undirected Graph Algorithms
+> - Planar Graph
+> - Graph Coloring
 > - Prim
 > - Kruskal
-> - Obtener puntos de Articulación
-> - Recorridos [Busqueda en Profundidad, Busqueda en Amplitud]
-
-### Lenguaje de Programación
-> - C# .NET Visual Studio 2008
+> - Deep First Search
+> - Breadth First Search
 
 ## Screenshots
 ![Alt text](./Screenshots/main.png?raw=true)
@@ -35,6 +28,3 @@ El objetivo de este proyecto fue principalmente conocer la Teoría de Grafos y s
 #### Algoritmo de Prim
 ![Alt text](./Screenshots/prim.png?raw=true)
 
-
-
-# graph-algorithms
