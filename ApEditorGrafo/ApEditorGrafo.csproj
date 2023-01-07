@@ -1,0 +1,187 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E00640F7-CA2A-41C9-B09B-BABC8D7ABB99}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApEditorGrafo</RootNamespace>
+    <AssemblyName>ApEditorGrafo</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BosqueAbarcador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BosqueAbarcador.Designer.cs">
+      <DependentUpon>BosqueAbarcador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\CGrafo.cs" />
+    <Compile Include="Clases\CGrafoDirigido.cs" />
+    <Compile Include="Clases\CGrafoNoDirigido.cs" />
+    <Compile Include="Clases\CNodo.cs" />
+    <Compile Include="Clases\CNodoArista.cs" />
+    <Compile Include="Clases\CNodoVertice.cs" />
+    <Compile Include="Clases\CPilaVertices.cs" />
+    <Compile Include="FCapturaPesoArista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCapturaPesoArista.Designer.cs">
+      <DependentUpon>FCapturaPesoArista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormMatrizCostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormMatrizCostos.Designer.cs">
+      <DependentUpon>FormMatrizCostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormConexo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormConexo.Designer.cs">
+      <DependentUpon>FormConexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormHijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormHijo.Designer.cs">
+      <DependentUpon>FormHijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormIsomorfismo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormIsomorfismo.Designer.cs">
+      <DependentUpon>FormIsomorfismo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PropGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PropGrafo.Designer.cs">
+      <DependentUpon>PropGrafo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BosqueAbarcador.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BosqueAbarcador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCapturaPesoArista.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FCapturaPesoArista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormMatrizCostos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMatrizCostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormConexo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormConexo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormHijo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormHijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormIsomorfismo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormIsomorfismo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PropGrafo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PropGrafo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nodo1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aristaNoDir1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aristaDir.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mueveNodo1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mueveGrafo1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminaNodo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminaArista.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminaGrafo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moverGraf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminarGraf.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
