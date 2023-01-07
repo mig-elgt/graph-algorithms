@@ -16,15 +16,14 @@ Directed and Undirected Graphs Algorithms
 > - Deep First Search
 > - Breadth First Search
 
-## Screenshots
+#### Directed and Undirected Graph
 ![Alt text](./Screenshots/main.png?raw=true)
 
-#### Bosque Abarcador para un grafo Dirigído
 ![Alt text](./Screenshots/bosque-abarcador-d.png?raw=true)
 
-#### Algoritmo de Dijkstra
+#### Dijkstra Algorithm
 ![Alt text](./Screenshots/dijkstra.png?raw=true)
 
-#### Algoritmo de Prim
+#### Prim Algorithm
 ![Alt text](./Screenshots/prim.png?raw=true)
 
